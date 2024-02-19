@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express'
 
-const app = express();
+const app = express()
 
-app.use(express.json());
+app.use(express.json())
 
 app.get('/teste', (req, res) => {
-  res
-    .status(200)
-    .send({ mensagem: 'boas-vindas à API' });
-});
+	res
+		.status(200)
+		.send({ mensagem: 'boas-vindas à API' })
+})
 
-module.exports = app;
+export default app
