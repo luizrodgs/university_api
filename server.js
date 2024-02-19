@@ -1,7 +1,7 @@
-import app from './src/app.js'
+const app = require('./src/app.js');
 
-const PORT = 3000
+const PORT = 3000;
 
 app.listen(PORT, () => {
-	console.log(`Server listening on: http://localhost:${PORT}!`)
-})
+  console.log('servidor escutando!');
+});
