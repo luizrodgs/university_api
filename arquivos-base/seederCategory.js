@@ -1,21 +1,21 @@
 [
   {
-    titulo: 'Node.js',
+    titulo: 'Software Engineering',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'Java',
+    titulo: 'Back-end Development',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'Python',
+    titulo: 'Project Management',
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    titulo: 'C#',
+    titulo: 'Cloud Computing',
     createdAt: new Date(),
     updatedAt: new Date(),
   },

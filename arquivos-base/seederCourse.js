@@ -1,7 +1,7 @@
 [
   {
-    titulo: 'API com Express',
-    descricao: 'Curso de API com Express e MongoDB',
+    titulo: 'Clean Architecture',
+    descricao: 'Clean Architecture course for begginers',
     data_inicio: '2023-01-01',
     categoria_id: 1,
     docente_id: 5,
@@ -10,7 +10,7 @@
   },
   {
     titulo: 'SpringBoot',
-    descricao: 'Curso de Java com Spring Framework',
+    descricao: 'Java course with Spring Framework',
     data_inicio: '2023-01-01',
     categoria_id: 2,
     docente_id: 5,
@@ -18,8 +18,8 @@
     updatedAt: new Date(),
   },
   {
-    titulo: 'Python Web com Django',
-    descricao: 'Curso de aplicações web com Django',
+    titulo: 'Scrum Management',
+    descricao: 'Agile Framework for projects',
     data_inicio: '2023-01-01',
     categoria_id: 3,
     docente_id: 6,
@@ -27,8 +27,8 @@
     updatedAt: new Date(),
   },
   {
-    titulo: 'Orientação a Objetos com C#',
-    descricao: 'Curso de C#: coleções, arquivos e libs',
+    titulo: 'AWS and Google Cloud',
+    descricao: 'Automatized Deploys',
     data_inicio: '2023-01-01',
     categoria_id: 4,
     docente_id: 6,
