@@ -16,9 +16,16 @@ class Controller {
     const { id } = req.params;
     try {
       const dataFound = await this.serviceEntity.getById(Number(id));
+      if (dataFound == null){
+        throw new Error('Not Found');
+      }
       res.status(200).json(dataFound);
     } catch (error){
-      res.status(500).json({ error: error.message });
+      if (error.message == 'Not Found') {
+        res.status(404).json({ error: error.message });
+      } else {
+        res.status(500).json({ error: error.message });
+      }
     }
   }
 
