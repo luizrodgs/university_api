@@ -8,7 +8,7 @@ class Controller {
       const dataList = await this.serviceEntity.getAll();
       res.status(200).json(dataList);
     } catch (error) {
-      console.log(error);
+      res.status(500).json({ error: error.message });
     }
   }
 
@@ -18,7 +18,7 @@ class Controller {
       const dataFound = await this.serviceEntity.getById(Number(id));
       res.status(200).json(dataFound);
     } catch (error){
-      console.log(error);
+      res.status(500).json({ error: error.message });
     }
   }
 
@@ -31,7 +31,7 @@ class Controller {
       }
       res.status(200).json(isCreated);
     } catch(error){
-      console.log(error);
+      res.status(500).json({ error: error.message });
     }
   }
 
@@ -45,7 +45,7 @@ class Controller {
       }
       return res.status(200).json({ message: 'Updated with success'});
     } catch (error){
-      console.log(error);
+      res.status(500).json({ error: error.message });
     }
   }
 
@@ -58,7 +58,7 @@ class Controller {
       }
       return res.status(200).json({ message: 'Deleted with success'});
     } catch(error) {
-      console.log(error);
+      res.status(500).json({ error: error.message });
     }
   }
 }
